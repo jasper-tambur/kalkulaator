@@ -1,12 +1,25 @@
 <!DOCTYPE html>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+</style> 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Kalkulaator</title>
 </head>
 <body>
-    
+    <div class = "container">
+        <div class = "field" id="price-fields">
+            <input class="inputs" id="price" type="number" placeholder="Sisesta hind" oninput="getValue()"></input>
+            <input class="inputs" id="interest" type="number" placeholder="Sisesta intress" oninput="getValue()"></input>
+        </div>
+        <div class="btn">
+            <button id="price-post-interest"></button>
+        </div>
+    </div>
 </body>
+<script src="script.js"></script>
 </html>

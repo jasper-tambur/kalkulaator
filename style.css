@@ -1,0 +1,33 @@
+body{
+    background-color: #00748f;
+    font-family: 'PT Sans', sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    padding: 5;
+    height: auto;
+    width: auto;
+}
+.field{
+    float: left;
+    display: flex;
+    justify-items: center;
+    
+}
+.inputs{
+    padding-left: 7rem;
+    display: flex;
+    height: 80px;
+    width: 200px;
+    margin: 0px 180px;
+}
+.btn{
+    display: flex;
+    height: 80px;
+    width: 300px;
+    padding: 0;
+    border: 1px solid red;
+    background: black;
+    cursor: pointer;
+}
