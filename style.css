@@ -6,28 +6,48 @@ body{
     display: flex;
     justify-content: center;
     padding: 5;
-    height: auto;
+    height: 700px;
     width: auto;
 }
 .field{
     float: left;
     display: flex;
-    justify-items: center;
-    
 }
 .inputs{
-    padding-left: 7rem;
     display: flex;
+    padding: 5px;
     height: 80px;
-    width: 200px;
+    width: 300px;
     margin: 0px 180px;
+    font-size: 30px;
+    text-align: center;
+    
 }
 .btn{
     display: flex;
     height: 80px;
-    width: 300px;
-    padding: 0;
-    border: 1px solid red;
-    background: black;
-    cursor: pointer;
+    padding: 5px;
+    background: beige;
+    font-size: 30px;
+}
+#price-post-interest{
+    line-height: 9px;
+    font-size: 30px;
+    padding: 30px;
+}
+.btn223{
+    display: flex;
+    align-self: flex-end;
+}
+.op{
+    display: flex;
+    align-self: center;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+input[type=number] {
+    -moz-appearance:textfield;
 }
