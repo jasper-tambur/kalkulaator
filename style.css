@@ -1,13 +1,14 @@
 body{
-    background-color: #00748f;
+    background-color: #55ac8f;
     font-family: 'PT Sans', sans-serif;
+    overflow-x: hidden;
 }
 .container{
     display: flex;
     justify-content: center;
     padding: 5;
-    height: 700px;
-    width: auto;
+    margin: 6rem 0rem;
+    width: 100%;
 }
 .field{
     float: left;
@@ -17,8 +18,7 @@ body{
     display: flex;
     padding: 5px;
     height: 80px;
-    width: 300px;
-    margin: 0px 180px;
+    width: 100%;
     font-size: 30px;
     text-align: center;
     
@@ -37,7 +37,7 @@ body{
 }
 .btn223{
     display: flex;
-    align-self: flex-end;
+    justify-content: center;
 }
 .op{
     display: flex;
@@ -50,4 +50,23 @@ input[type=number]::-webkit-outer-spin-button {
 }
 input[type=number] {
     -moz-appearance:textfield;
+}
+
+#price{
+    margin-right: 3rem;
+}
+
+@media screen and (max-width:600px){
+    .input, .btn, .container, .field, .op, .btn223, .inputs{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 5;
+        width: 100%;
+    }
+
+    #price{
+        margin-bottom: 1rem;
+    }
+
 }
