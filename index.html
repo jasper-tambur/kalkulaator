@@ -12,17 +12,27 @@
 </head>
 <body>
     <div class = "container">
-        <div class = "field" id="price-fields">
-            <div class="op">
-                <input class="inputs" id="price" type="number" placeholder="Sisesta hind" oninput="getValue()"></input>
-            </div>
-            <div class="btn223">
-                <div class="btn">
-                    <button id="price-post-interest">Jääk</button>
-                </div>
-            </div>
-            <div class="op">
-                <input class="inputs" id="interest" type="number" placeholder="Sisesta intress" oninput="getValue()"></input>
+        <div class="column-side">
+            <input class="info" type="number" name="price" id="price" placeholder="Auto hind">
+            <input class="info" type="number" name="payment" id="payment" placeholder="Eesmaks">
+            <input class="info" type="number" name="tradein" id="tradein" placeholder="Sissevahetus">
+            <label class="info" for="length">Laenu pikkus</label>
+
+            <select name="length" id="length">
+              <option value="12">12</option>
+              <option value="24">24</option>
+              <option value="36">36</option>
+              <option value="48">48</option>
+              <option value="60">60</option>
+              <option value="72">72</option>
+              <option value="84">84</option>
+            </select> 
+            <input type="number" name="interest" id="interest" placeholder="Intress">
+        </div>
+        <div class="column-main">
+            <div class="window">
+                <div class="window-top"></div>
+                <div class="windows-bot"></div>
             </div>
         </div>
     </div>
